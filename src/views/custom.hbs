@@ -20,52 +20,51 @@
 
         <select name="size">
             <option disabled>choose your size</option>
-            <option value="Large">Large</option>
-            <option value="Medium" selected>Medium</option>
+            <option value="Large" selected>Large</option>
+            <option value="Medium">Medium</option>
             <option value="Small">Small</option>
         </select>
 
         <!-- toppings -->
-        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-            <input type="checkbox" class="btn-check" id="pepperoni" value="pepperoni" name="toppings" autocomplete="off"
+        <div>
+            <input type="checkbox" id="pepperoni" value="pepperoni" name="toppings" autocomplete="off"
                 checked />
-            <label class="btn btn-outline-primary" for="pepperoni">pepperoni</label>
+            <label for="pepperoni">pepperoni</label>
 
-            <input type="checkbox" class="btn-check" id="ham" value="ham" name="toppings" autocomplete="off" />
-            <label class="btn btn-outline-primary" for="ham">ham</label>
+            <input type="checkbox" id="ham" value="ham" name="toppings" autocomplete="off" />
+            <label for="ham">ham</label>
 
-            <input type="checkbox" class="btn-check" id="bacon" value="bacon" name="toppings" autocomplete="off" />
-            <label class="btn btn-outline-primary" for="bacon">bacon</label>
+            <input type="checkbox" id="bacon" value="bacon" name="toppings" autocomplete="off" />
+            <label for="bacon">bacon</label>
 
-            <input type="checkbox" class="btn-check" id="mushrooms" value="mushrooms" name="toppings"
+            <input type="checkbox" id="mushrooms" value="mushrooms" name="toppings"
                 autocomplete="off" />
-            <label class="btn btn-outline-primary" for="mushrooms">mushrooms</label>
+            <label for="mushrooms">mushrooms</label>
 
-            <input type="checkbox" class="btn-check" id="olives" value="olives" name="toppings" autocomplete="off" />
-            <label class="btn btn-outline-primary" for="olives">olives</label>
+            <input type="checkbox" id="olives" value="olives" name="toppings" autocomplete="off" />
+            <label for="olives">black olives</label>
 
-            <input type="checkbox" class="btn-check" id="onions" value="onions" name="toppings" autocomplete="off" />
-            <label class="btn btn-outline-primary" for="onions">onions</label>
+            <input type="checkbox" id="onions" value="onions" name="toppings" autocomplete="off" />
+            <label for="onions">onions</label>
 
-            <input type="checkbox" class="btn-check" id="anchovies" value="anchovies" name="toppings"
+            <input type="checkbox" id="spicy" value="spicy" name="toppings"
                 autocomplete="off" />
-            <label class="btn btn-outline-primary" for="anchovies">anchovies</label>
+            <label for="spicy">spicy pepperoni</label>
 
-            <input type="checkbox" class="btn-check" id="pineapple" value="pineapple" name="toppings"
+            <input type="checkbox" id="pineapple" value="pineapple" name="toppings"
                 autocomplete="off" />
-            <label class="btn btn-outline-primary" for="pineapple">pineapple</label>
+            <label for="pineapple">pineapple</label>
 
-            <input type="checkbox" class="btn-check" id="greenPepper" value="green pepper" name="toppings"
+            <input type="checkbox" id="greenPepper" value="green pepper" name="toppings"
                 autocomplete="off" />
-            <label class="btn btn-outline-primary" for="greenPepper">green peppers</label>
+            <label for="greenPepper">green peppers</label>
 
-            <input type="checkbox" class="btn-check" id="italianSausage" value="italian sausage" name="toppings"
+            <input type="checkbox" id="italianSausage" value="italian sausage" name="toppings"
                 autocomplete="off" />
-            <label class="btn btn-outline-primary" for="italianSausage">italian
-                sausage</label>
+            <label for="italianSausage">italian sausage</label>
 
-            <input type="checkbox" class="btn-check" id="spinach" value="spinach" name="toppings" autocomplete="off" />
-            <label class="btn btn-outline-primary" for="spinach">spinach</label>
+            <input type="checkbox" id="bananaPepper" value="bananaPeppers" name="toppings" autocomplete="off" />
+            <label for="BananaPeppers">banana peppers</label>
 
         </div>
 
@@ -82,7 +81,7 @@
             <label>Special Instructions (optional):</label>
         </div>
         <div>
-            <textarea placeholder="Leave special instructions here" rows="6" cols="100" name="specialInstructions"></textarea>
+            <textarea placeholder="Leave special instructions here" rows="6" cols="50" name="specialInstructions"></textarea>
         </div>
     
         <button type="submit">Calculate Price</button>

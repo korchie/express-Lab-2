@@ -75,3 +75,12 @@ button {
 ul {
     color: rgb(250, 250, 85);
 }
+
+select {
+    height: 25px;
+    color: rgb(0, 146, 0);
+}
+
+textarea {
+    font-size: 20px;
+}
