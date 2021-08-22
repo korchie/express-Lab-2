@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Build a Custom Pizza!</title>
+</head>
+
+<body>
+
+    <h1>Build Your Own Pizza</h1>
+
+    <form action="/confirmation" method="POST">
+
+        <select name="size">
+            <option disabled>choose your size</option>
+            <option value="Large">Large</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="Small">Small</option>
+        </select>
+
+        <!-- toppings -->
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="pepperoni" value="pepperoni" name="toppings" autocomplete="off"
+                checked />
+            <label class="btn btn-outline-primary" for="pepperoni">pepperoni</label>
+
+            <input type="checkbox" class="btn-check" id="ham" value="ham" name="toppings" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="ham">ham</label>
+
+            <input type="checkbox" class="btn-check" id="bacon" value="bacon" name="toppings" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="bacon">bacon</label>
+
+            <input type="checkbox" class="btn-check" id="mushrooms" value="mushrooms" name="toppings"
+                autocomplete="off" />
+            <label class="btn btn-outline-primary" for="mushrooms">mushrooms</label>
+
+            <input type="checkbox" class="btn-check" id="olives" value="olives" name="toppings" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="olives">olives</label>
+
+            <input type="checkbox" class="btn-check" id="onions" value="onions" name="toppings" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="onions">onions</label>
+
+            <input type="checkbox" class="btn-check" id="anchovies" value="anchovies" name="toppings"
+                autocomplete="off" />
+            <label class="btn btn-outline-primary" for="anchovies">anchovies</label>
+
+            <input type="checkbox" class="btn-check" id="pineapple" value="pineapple" name="toppings"
+                autocomplete="off" />
+            <label class="btn btn-outline-primary" for="pineapple">pineapple</label>
+
+            <input type="checkbox" class="btn-check" id="greenPepper" value="green pepper" name="toppings"
+                autocomplete="off" />
+            <label class="btn btn-outline-primary" for="greenPepper">green peppers</label>
+
+            <input type="checkbox" class="btn-check" id="italianSausage" value="italian sausage" name="toppings"
+                autocomplete="off" />
+            <label class="btn btn-outline-primary" for="italianSausage">italian
+                sausage</label>
+
+            <input type="checkbox" class="btn-check" id="spinach" value="spinach" name="toppings" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="spinach">spinach</label>
+
+        </div>
+
+        <div>
+
+            <input type="checkbox" value="true" id="glutenFree" name="glutenFree" />
+            <label for="glutenFree">
+                Gluten free crust? ($2.00 extra)
+            </label>
+
+        </div>
+
+        <div>
+            <label>Special Instructions (optional):</label>
+        </div>
+        <div>
+            <textarea placeholder="Leave special instructions here" rows="6" cols="100" name="specialInstructions"></textarea>
+        </div>
+    
+        <button type="submit">Calculate Price</button>
+    
+
+    <a href="/">Nevermind</a>
+    </form>    
+
+<div>
+    <img src="/pix/custom.jpg" alt="build your own!">
+</div>
+
+</body>
+
+</html>

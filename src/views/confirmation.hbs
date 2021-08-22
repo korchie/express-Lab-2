@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Build Your Own: Confirmation</title>
+</head>
+<body>
+    <h1>Your Pizza</h1>
+    <h3>Size:</h3>
+    <p>{{size}}</p>
+
+    <h3>Toppings (x{{toppings.length}}):</h3>
+    <p>{{toppings}}</p>
+
+    <h3>Gluten Free Crust?</h3>
+    <p>{{glutenFree}}</p>
+
+    <h3>Special Instructions:</h3>
+    <p>{{specialInstructions}}</p>
+
+    <h3>Price:</h3>
+    <p>{{price}}</p>
+
+    {{#if freeDelivery}}
+    <p id="freeDelivery">Your Order is $15 or more, so today you're getting <strong>FREE DELIVERY!</strong></p>
+    {{/if}}
+
+    <div>
+        <img src="/pix/confirm.jpg" alt="we hear you!">
+    </div>
+
+<a href="/custom">Build Another Pizza</a> | <a href="/">Home</a>
+</body>
+</html>
