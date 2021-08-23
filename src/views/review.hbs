@@ -6,39 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>Rate Us!</title>
 </head>
 
 <body>
 
-    <div id="formBox">
-        <form action="/review-thx" method="POST">
-            <h2>Leave a Review:</h2>
-            <label>Your Name:</label><br>
-            <input type="text" id="nameInput"><br>
-            <textarea placeholder="Please leave a review" rows="6" cols="50"></textarea>
 
+    <form action="/review-thx" method="POST">
+        <h2>Leave a Review:</h2>
+        <label>Your Name:</label><br>
+        <input type="text" name="name"><br>
+        <textarea placeholder="Please leave a review" rows="6" cols="50" name="comment"></textarea>
+
+        <div>
+            Rating:
+            <input type="radio" name="rating" value="5">
+            <label for="five">5 (best)</label>
+            <input type="radio" name="rating" value="4">
+            <label for="four"></label>4</label>
+            <input type="radio" name="rating" value="3">
+            <label for="three">3</label>
+            <input type="radio" name="rating" value="2">
+            <label for="two">2</label>
+            <input type="radio" name="rating" value="1">
+            <label for="one">1 (worst)</label>
             <div>
-                Rating:
-                <input type="radio" name="five" id="radioButtons">
-                <label for="five">5 (best)</label>
-                <input type="radio" name="five" id="radioButtons">
-                <label for="four"></label>4</label>
-                <input type="radio" name="five" id="radioButtons">
-                <label for="three">3</label>
-                <input type="radio" name="five" id="radioButtons">
-                <label for="two">2</label>
-                <input type="radio" name="five" id="radioButtons">
-                <label for="one">1 (worst)</label>
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
+                <button type="submit">Submit</button>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
+
 
     <div>
         <img src="/pix/review.jpg" alt="we hear you!">
