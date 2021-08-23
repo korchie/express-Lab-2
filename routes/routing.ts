@@ -55,7 +55,7 @@ routes.post("/confirmation", (req, res) => {
 
     let glutenFree: boolean = Boolean(req.body.glutenFree);
     let specialInstructions: string = req.body.specialInstructions || "";
-    let price = size == "Small" ? 7 + toppings.length * .5 : size = "Medium" ? 10 + toppings.length : 12 + toppings.length * 1.25;
+    let price = size == "Small" ? 7 + toppings.length * .5 : size == "Medium" ? 10 + toppings.length : 12 + toppings.length * 1.25;
 
     let freeDelivery = price >= 15;
 
